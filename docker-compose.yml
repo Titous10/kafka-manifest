@@ -19,3 +19,8 @@ services:
       - kafka_data:/bitnami/kafka
     networks:
       - application-network
+
+networks:
+  application-network:
+    name: application-network
+    driver: bridge
