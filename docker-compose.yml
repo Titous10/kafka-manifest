@@ -20,6 +20,9 @@ services:
     networks:
       - application-network
 
+volumes:
+  kafka_data:
+
 networks:
   application-network:
     name: application-network
